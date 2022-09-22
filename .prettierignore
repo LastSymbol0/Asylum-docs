@@ -1,0 +1,11 @@
+node_modules
+.idea
+/node_modules
+node_modules/
+
+#build
+dist/
+build/
+
+#Nested .prettieringore files not supported as of 7.08.22. So all ignore config must be here.
+packages/connection-library/data

@@ -1,0 +1,8 @@
+{
+   "label": "Creator Studio",
+   "position": 1,
+   "link": {
+      "type": "generated-index",
+      "description": "Web app, written in React and designed for space developers to create and manage Asylum entities: create item templates, manage interpetations, mint NFTs."
+   }
+}

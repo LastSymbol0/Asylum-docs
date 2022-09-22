@@ -1,0 +1,15 @@
+{
+   "singleQuote": true,
+   "semi": false,
+   "tabWidth": 3,
+   "printWidth": 100,
+   "importOrder": [
+      "^react$",
+      "<THIRD_PARTY_MODULES>",
+      "^@asylum-ui/(.*)",
+      "types|store|utils|hooks|layout|pages|modules|context|assets|api|components",
+      "^[./]"
+   ],
+   "importOrderSeparation": true,
+   "importOrderSortSpecifiers": true
+}
