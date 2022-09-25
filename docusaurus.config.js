@@ -10,7 +10,7 @@ const config = {
    tagline: 'Asylum Documentation',
    url: 'https://docs.asylum.space',
    baseUrl: '/',
-   onBrokenLinks: 'throw',
+   onBrokenLinks: 'warn',
    onBrokenMarkdownLinks: 'warn',
    favicon: 'img/favicon.svg',
    i18n: {
