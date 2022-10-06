@@ -1,6 +1,6 @@
 {
-   "label": "Tutorials",
-   "position": 6,
+   "label": "Standards",
+   "position": 2,
    "collapsible": false,
    "link": {
       "type": "generated-index"

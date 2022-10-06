@@ -5,23 +5,19 @@ description: Action-RPG 3d-game, patterns (new space-related entity), pattern-bl
 
 # Configure Patterns
 
-### In this guide:
+## In this guide:
 - action-RPG 3d-game
 - patterns (new space-related entity)
 - pattern-blueprints interconnections
 - 3d viewer for Creator Studio
 
+## Prerequisites
 
-:::info
-This guide extends [previous part](testing-guide-blueprint-setup.md).  
-You have to start Asylum Node and Creator studio manually or with docker. Check [blueprint setup guide](./testing-guide-blueprint-setup.md) for initial setup if needed..
-:::
+Choose one of two options to install Creator Studio:
+- [Docker setup](../asylum-ui/creator-studio/installation-docker) (Recommended)
+- [Manual installation](../asylum-ui/creator-studio/installation-manual)
 
-:::tip
-`seed:demo` script was used for blueprints and spaces populating instead of `seed` script (use manual setup and run <code>yarn run seed:demo</code> command in the root folder instead of `yarn run seed` if you want to fully recreate guide-flow). You can omit this step, but screenshots will be a just a little different.
-:::
-
-### Case 1: Creating a blueprint from a pattern
+## Case 1: Creating a blueprint from a pattern
 
 1. Open `select space` page.
 
@@ -49,7 +45,7 @@ Creator studio guides us to fill necessary fields with files and/or metadata. In
 - inventory-view
 - 3d-model
 
-You can use corresponding resources from [seeder files](../packages/connection-library/img/blueprints/fire-sword).  
+You can use corresponding resources from [seeder files](https://gitlab.com/asylum-space/asylum-ui/-/tree/main/packages/connection-library/img/blueprints/fire-sword).  
 
 ![](img/patterns/filled-blueprint-from-pattern.png)    
 
@@ -117,7 +113,7 @@ Let's add it.
 
 Hooray! It has a cool fire effect now in our game. Feel free to slaughter some monsters with it if you'd like to play our game a little.
 
-### Case 2: Adapt blueprint to pattern
+## Case 2: Adapt blueprint to pattern
 
 Now let's make <b>Fire sword</b> adapted for usage in Ninja Rian (first demo game by Asylum)
 
@@ -160,12 +156,12 @@ We can use our <b>Fire sword</b> in Ninja Rian now!
 ![](img/patterns/sword-animation.png)
 
 
-### Case 3: Interoperable Items and Drop
+## Case 3: Interoperable Items and Drop
 
 Performing some game conditions, player can receive special NFT items. Space Client can initiate Item minting for Player, and when NFT appear in block render this Item directly in space.
 The next steps guides you though the possible scenario, where Space Client drops Player some Items, and Player uses these items within different spaces.
 
-1. Restart Asylum Node (in Docker, you can do this with the "Restart" button next to the container name) and run `yarn seed:demo` script from the root folder.
+1. Restart Asylum Node and reseed data ([see how to reseed data in Docker](../asylum-ui/creator-studio/installation-docker#reseed-storage)).
 2. Start the `Ninja Rian` space and pass through the first level. One of the NPC is guaranteed to drop the `Old curved sword`.
 ![](img/patterns/drop-curved-sword.png)
 5. Close the space and go to `Dark Forest`. You can equip the `Old curved sword` you just obtained in `Ninja Rian`. Pass through the level and kill a specific highlighted NPC, which will drop `Kerosene Lamp`.

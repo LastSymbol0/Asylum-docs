@@ -1,0 +1,8 @@
+{
+   "label": "Build & Run",
+   "position": 4,
+   "link": {
+      "type": "generated-index",
+      "description": "The plugin is designed to work in Unity Play Mode, WebGL build, and Windows, Mac, Linux Standalone builds."
+   }
+}

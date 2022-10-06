@@ -3,6 +3,6 @@
    "position": 2,
    "link": {
       "type": "generated-index",
-      "description": "Contains libraries and web apps for interaction with Asylum node."
+      "description": "The typescript library in form of npm package, which ease integration with Asylum pallets providing clear API"
    }
 }

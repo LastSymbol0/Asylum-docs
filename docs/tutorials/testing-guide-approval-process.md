@@ -13,8 +13,8 @@ description: Mint NFTs for different accounts, approval process, 2d game space o
 
 In this guide we will go through the item approval process.
 
-> This guide extends [previous part](testing-guide-blueprint-setup.md).  
-> You have to start Asylum Node and Creator studio manually or with docker. Check [blueprint setup guide](./testing-guide-blueprint-setup.md) for initial setup if needed.
+> This guide extends [previous part](testing-guide-blueprint-setup).  
+> You have to start Asylum Node and Creator studio manually or with docker. Check [blueprint setup guide](./testing-guide-blueprint-setup) for initial setup if needed.
 
 ### Step 1: Minting items
 

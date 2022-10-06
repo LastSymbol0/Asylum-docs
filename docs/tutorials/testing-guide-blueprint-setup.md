@@ -12,9 +12,9 @@ description: Initial setup, configuring blueprints, configuring interpretations.
 
 ### Step 1: Setup and run Creator Studio web app
 
-Choose one of two options to run Creator Studio locally:
-- [Manual setup](/packages/creator-studio/README.md#run-creator-studio-manual-setup)
-- [Docker setup](/packages/creator-studio/README.md#run-creator-studio-docker-setup)
+Choose one of two options to install Creator Studio:
+- [Docker setup](../asylum-ui/creator-studio/installation-docker) (Recommended)
+- [Manual installation](../asylum-ui/creator-studio/installation-manual)
 
 ### Step 2: Configure PolkadotJS and connect to the local node:
 
@@ -53,7 +53,6 @@ Choose one of two options to run Creator Studio locally:
    ![](img/blueprint-setup/blueprint-overview.png)
 
 5. Let's add a new Interpretation with `pixeled tag`.
-> Note: after submitting the change-set Blueprint proposal, you'll be passed through the DAO acceptance process. Right now, the flow is simplified, and it's implied that DAO always accepts the proposal:
 
 ![](img/blueprint-setup/interpretation-pixel.png)
 

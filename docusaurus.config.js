@@ -10,7 +10,7 @@ const config = {
    tagline: 'Asylum Documentation',
    url: 'https://docs.asylum.space',
    baseUrl: '/',
-   onBrokenLinks: 'warn',
+   onBrokenLinks: 'throw',
    onBrokenMarkdownLinks: 'warn',
    favicon: 'img/favicon.svg',
    i18n: {
@@ -57,10 +57,28 @@ const config = {
                   label: 'Intro',
                },
                {
-                  to: '/category/asylum-ui',
+                  to: '/category/standards',
+                  activeBaseRegex: '(asylum-standards)|(/category/asylum-standards)',
+                  position: 'left',
+                  label: 'Standards',
+               },
+               {
+                  to: '/category/ui',
                   activeBaseRegex: '(asylum-ui)|(/category/asylum-ui)',
                   position: 'left',
-                  label: 'Asylum UI',
+                  label: 'UI',
+               },
+               {
+                  to: '/category/node',
+                  activeBaseRegex: '(asylum-node)|(/category/asylum-node)',
+                  position: 'left',
+                  label: 'Node',
+               },
+               {
+                  to: '/category/unity-sdk',
+                  activeBaseRegex: '(asylum-unity-sdk)|(/category/asylum-unity-sdk)',
+                  position: 'left',
+                  label: 'Unity SDK',
                },
                {
                   to: '/category/tutorials',
@@ -69,8 +87,8 @@ const config = {
                   label: 'Tutorials',
                },
                {
-                  href: 'https://github.com/facebook/docusaurus',
-                  label: 'GitHub',
+                  href: 'https://gitlab.com/asylum-space',
+                  label: 'GibLab',
                   position: 'right',
                },
             ],

@@ -10,9 +10,9 @@ Interactions with NFT items are not supported in the current version of the Conn
 
 Almost all functionality of the Connection Library is covered in the [seed script](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/connection-library/seed/index.ts) and can be used as a reference.
 
-Follow the steps:
+## Installation steps
 
-1. Install and run [Asylum node](https://gitlab.com/asylum-space/asylum-item-nft/-/blob/main/README.md)
+1. Install and run [Asylum node](../../node/installation)
 2. Add [Connection Library](https://gitlab.com/asylum-space/asylum-ui/-/tree/main/packages/connection-library) as a local dependency your project `package.json`.
 
 ```json title="package.json"
