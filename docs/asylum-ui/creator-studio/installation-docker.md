@@ -20,8 +20,8 @@ REACT_APP_MINTER_MNEMONIC = eternal danger cherry radar exit damage slam hip say
 :::info
 You can specify any mnemonic seed phrase, but it have to coincide in `connection-library` and `creator-studio` packages
 :::
-4. [Docker](https://docs.docker.com/get-docker/) and `docker-compose` and run.
-5. Execute `docker-compose up` in a root folder.
+4. Install [Docker](https://docs.docker.com/get-docker/) and `docker-compose` and run.
+5. Execute `yarn docker:up` in a root folder.
 6. Import account to PolkadotJS extension from seed phrase:
 
 ```
@@ -50,8 +50,12 @@ yarn docker:restart:node
 yarn docker:seed
 ```
 
+:::tip
+You can run `yarn docker:seed:with-items` instead to seed Items as well
+:::
+
 ## Tutorials
 
 -  [Blueprint setup](../../tutorials/testing-guide-blueprint-setup)
--  [Approval process](../../tutorials/testing-guide-approval-process)
+-  [Items Minting](../../tutorials/testing-guide-items-minting)
 -  [Patterns setup](../../tutorials/testing-guide-patterns)

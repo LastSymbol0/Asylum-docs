@@ -89,7 +89,7 @@ Seeded data will be lost after each restart of `node-asylum`. To keep your data 
 ## Tutorials
 
 -  [Blueprint setup](../../tutorials/testing-guide-blueprint-setup)
--  [Approval process](../../tutorials/testing-guide-approval-process)
+-  [Items Minting](../../tutorials/testing-guide-items-minting)
 -  [Patterns setup](../../tutorials/testing-guide-patterns)
 
 ## For Developers

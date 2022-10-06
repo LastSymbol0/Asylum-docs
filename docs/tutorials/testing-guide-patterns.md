@@ -13,9 +13,18 @@ description: Action-RPG 3d-game, patterns (new space-related entity), pattern-bl
 
 ## Prerequisites
 
-Choose one of two options to install Creator Studio:
-- [Docker setup](../asylum-ui/creator-studio/installation-docker) (Recommended)
-- [Manual installation](../asylum-ui/creator-studio/installation-manual)
+1. Choose one of two options to install Creator Studio:
+   - [Docker setup](../asylum-ui/creator-studio/installation-docker) (Recommended)
+   - [Manual installation](../asylum-ui/creator-studio/installation-manual)
+
+2. [Install](https://polkadot.js.org/extension/) PolkadotJS browser extension.
+3. Import seeder account you used during Creator Studio installation.
+4. Navigate to `http://localhost:3000` in the browser.
+5. Click `disconnected` button and connect to the local node and local ipfs:
+   ![](img/blueprint-setup/node-connection.png)
+6. Click `connect wallet` button -> Select `Polkadot{.js} wallet` -> Select seeder account, which you have imported before:
+   ![](img/blueprint-setup/node-select-extension.png)
+   ![](img/blueprint-setup/node-select-wallet.png)
 
 ## Case 1: Creating a blueprint from a pattern
 
@@ -45,7 +54,7 @@ Creator studio guides us to fill necessary fields with files and/or metadata. In
 - inventory-view
 - 3d-model
 
-You can use corresponding resources from [seeder files](https://gitlab.com/asylum-space/asylum-ui/-/tree/main/packages/connection-library/img/blueprints/fire-sword).  
+You can use corresponding resources from [seeder files](https://gitlab.com/asylum-space/asylum-ui/-/tree/main/packages/connection-library/img/blueprints/fire-sword) to create a Fire Sword!.  
 
 ![](img/patterns/filled-blueprint-from-pattern.png)    
 
@@ -158,14 +167,18 @@ We can use our <b>Fire sword</b> in Ninja Rian now!
 
 ## Case 3: Interoperable Items and Drop
 
-Performing some game conditions, player can receive special NFT items. Space Client can initiate Item minting for Player, and when NFT appear in block render this Item directly in space.
-The next steps guides you though the possible scenario, where Space Client drops Player some Items, and Player uses these items within different spaces.
+Performing some game conditions, player can receive special NFT items. Space Client can initiate Item minting for Player, and when NFT appears in block, Game Client renders Item directly in space.
+The next steps guide you though the possible scenario, where Space Client drops Player some Items, and Player uses these items within different spaces.
 
 1. Restart Asylum Node and reseed data ([see how to reseed data in Docker](../asylum-ui/creator-studio/installation-docker#reseed-storage)).
-2. Start the `Ninja Rian` space and pass through the first level. One of the NPC is guaranteed to drop the `Old curved sword`.
+2. Start the `Ninja Rian` space and pass through the first level. Use 'WSAD' to move and 'JKL' for actions. One of the NPC is guaranteed to drop the `Old curved sword`.
 ![](img/patterns/drop-curved-sword.png)
-5. Close the space and go to `Dark Forest`. You can equip the `Old curved sword` you just obtained in `Ninja Rian`. Pass through the level and kill a specific highlighted NPC, which will drop `Kerosene Lamp`.
-6. `Kerosene Lamp` is working as a world exploring Item - its idea is to reveal hidden places. Equipping it will help you to find a Chest. Open the chest, and you'll find another Item - `Clover Leaf`.
-7. Equipping `Clover Leaf`, you can find the green title above the character's HP bar. In this space it's used as an Item, which doesn't affect game balance.
-8. Let's get back to `Ninja Rian` again. Equip `Clover Leaf`. Now you can passively earn unique coins, for which you can buy items in-game store.
-9. Similarly, by equipping `Kerosene Lamp`, you can discover unreachable before spaces, where you can get more in-game goods helping proceeding levels.
+3. Close the space and go to `Dark Forest`. You can equip the `Old curved sword` you just obtained in `Ninja Rian`. Pass through the level and kill a specific highlighted NPC, which will drop `Kerosene Lamp`.
+![](img/patterns/drop-lamp.png)
+4. `Kerosene Lamp` is working as a world exploring Item - its idea is to reveal hidden places. Equipping it will help you to find a Chest. Open the chest, and you'll find another Item - `Clover Leaf`.
+![](img/patterns/drop-clover-leaf.png)
+5. Equipping `Clover Leaf`, you can find the green title above the character's HP bar. In this space it's used as an Item, which doesn't affect game balance.
+6. Let's get back to `Ninja Rian` again. Equip `Clover Leaf`. Now you can passively earn unique coins, for which you can buy items in-game store.
+![](img/patterns/equip-clover-leaf.png)
+7. Similarly, by equipping `Kerosene Lamp`, you can discover unreachable before spaces, where you can get more in-game goods helping proceeding levels.
+![](img/patterns/open-location-lamp.png)

@@ -33,8 +33,8 @@ Asylum Standards consists of:
 
 Includes set of web apps to simplify managing Asylum entities (NFTs, Avatars, etc.) for Creators and set of libraries you can integrate into dApp to connect with Asylum ecosystem.
 
-- [Creator Studio](/creator-studio) - designed for space developers to create and manage Asylum entities
-- [Connection Library](/connection-library) - the typescript library in form of npm package, which ease integration with Asylum pallets providing clear API
+- [Creator Studio](./category/creator-studio) - designed for space developers to create and manage Asylum entities
+- [Connection Library](./category/connection-library) - the typescript library in form of npm package, which ease integration with Asylum pallets providing clear API
 
 ### [3. Node](./category/node)
 
@@ -50,8 +50,8 @@ We’re using typical for Polkadot project technical stack, including substrate 
 Right now we support Asylum infrastructure for Unity engine, but plan to expand it to Unreal Engine and other popular 3D creation tools.
 
 - [Overview](./unity-sdk/overview)
-- [Quick start](./unity-sdk/quick-start)
-- [SDK](./category/sdk) - guides, APIs, description for Asylum Unity SDK
+- [Installation](./unity-sdk/installation)
+- [Build & Run](./category/build--run) - guides, APIs, description for Asylum Unity SDK
 
 ## Resources
 

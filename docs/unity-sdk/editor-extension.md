@@ -13,7 +13,7 @@ It is also possible to query Items of a certain user with the help of a secret p
 
 ## How to use Editor Extension?
 
-1. The first thing you need to do is to download our [example](https://gitlab.com/asylum-space/asylum-unity-sdk-example) or add the [AsylumSDK Plugin](../plugin-how-to) to the project.
+1. The first thing you need to do is to download our [Asylum Unity SDK Example](https://gitlab.com/asylum-space/asylum-unity-sdk-example) **or** add the [Asylum Unity SDK Plugin](https://gitlab.com/asylum-space/asylum-unity-sdk) to the project.
 
 2. Then you will need to create empty `GameObject` in the scene and then add to it the AsylumPlugin script component.
 
@@ -21,7 +21,9 @@ It is also possible to query Items of a certain user with the help of a secret p
 
 ![](img/EditorPlugin_SetComponent.png)
 
-> Note: If you have downloaded our [example](https://gitlab.com/asylum-space/asylum-unity-sdk-example), then you can find this `GameObject` named "EditorPlugin" in the scene hierarchy.
+:::info
+If you have downloaded our [example](https://gitlab.com/asylum-space/asylum-unity-sdk-example), then you can find this `GameObject` named "EditorPlugin" in the scene hierarchy.
+:::
 
 3. Make sure you enter the user's passphrase in the [AsylumPlugin](https://gitlab.com/asylum-space/asylum-unity-sdk/-/tree/main/AsylumSDK/AsylumPlugin.cs) component field.
 
