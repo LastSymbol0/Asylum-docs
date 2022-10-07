@@ -48,7 +48,7 @@ Before start, make sure you have installed WebGL for Unity. You can find downloa
    
    ![](img/WEBGL_Mocks.png)
 
-5. Follow the steps of [Docker setup](../../asylum-ui/creator-studio/installation-docker.md) and run the following command in terminal:
+5. Follow the steps of [Docker setup](../../asylum-ui/creator-studio/installation-docker) and run the following command in terminal:
 
    ```
    docker compose up

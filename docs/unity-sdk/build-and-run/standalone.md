@@ -18,7 +18,7 @@
 
 4. [Download](https://docs.docker.com/get-docker/), install and run Docker.
 
-3. Follow the steps of [Docker setup](../../asylum-ui/creator-studio/installation-docker.md) and run the following command in terminal:
+3. Follow the steps of [Docker setup](../../asylum-ui/creator-studio/installation-docker) and run the following command in terminal:
 
     ```
     docker compose up

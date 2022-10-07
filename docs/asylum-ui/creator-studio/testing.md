@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ### Run E2E Cypress tests
 
-1. Follow [Docker setup](./installation-docker.md) to install Creator Studio in Docker
+1. Follow [Docker setup](./installation-docker) to install Creator Studio in Docker
 2. Create `.env.test.local` file in `asylum-ui/packages/creator-studio` folder:
     ```yaml title="asylum-ui/packages/creator-studio/.env.test.local"
     REACT_APP_NODE_ENV = test

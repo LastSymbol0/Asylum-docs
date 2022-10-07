@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Docker setup
 
 ## Installation steps
@@ -34,12 +37,26 @@ These steps will set up and run three containers and **automatically seed the mo
 
 :::caution
 You might receive CORS policy error in Creator Studio, when you try to upload assets to IPFS.
-To avoid this issue, execute the following command from `asylum-ui` root when Docker is up and restart `ipfs` container:
+To avoid this issue, execute the following command from `asylum-ui` root when Docker is up:
 
+<Tabs groupId="operating-systems">
+  <TabItem value="unix" label="Unix">
+    <pre>
+    docker-compose exec ipfs ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
+    </pre>
+  </TabItem>
+  <TabItem value="win" label="Windows">
+    <pre>
+    docker-compose exec ipfs ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"*\"]'
+    </pre>
+  </TabItem>
+</Tabs>
+
+and then restart `ipfs` container:
 ```
-docker-compose exec ipfs ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"*\"]'
 yarn docker:restart:ipfs
 ```
+
 :::
 
 ## Reseed storage

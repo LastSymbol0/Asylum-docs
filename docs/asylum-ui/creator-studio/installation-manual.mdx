@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Manual installation
 
 :::info
@@ -23,14 +26,29 @@ You have set up and run three processes in the background:
 
 2. [Install](https://docs.ipfs.io/install/command-line/#official-distributions) and run the local IPFS node : `ipfs daemon`
 
-    :::caution
-    You might receive CORS policy error in Creator Studio, when you try to upload assets to IPFS.
-    To avoid this issue, execute the following command and restart `ipfs daemon`:
-    
-    ```
-    ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
-    ```
-    :::
+  :::caution
+  You might receive CORS policy error in Creator Studio, when you try to upload assets to IPFS.
+  To avoid this issue, execute the following command from `asylum-ui` root when Docker is up:
+
+  <Tabs groupId="operating-systems">
+    <TabItem value="unix" label="Unix">
+      <pre>
+      docker-compose exec ipfs ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
+      </pre>
+    </TabItem>
+    <TabItem value="win" label="Windows">
+      <pre>
+      docker-compose exec ipfs ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"*\"]'
+      </pre>
+    </TabItem>
+  </Tabs>
+
+  and then restart `ipfs` container:
+  ```
+  yarn docker:restart:ipfs
+  ```
+
+  :::
 
 3. Clone [Asylum UI](https://gitlab.com/asylum-space/asylum-ui) repository and create `.env.local` within `asylum-ui/packages/creator-studio` with the following content:
     ```yaml title="asylum-ui/packages/creator-studio/.env.local"
