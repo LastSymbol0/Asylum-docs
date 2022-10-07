@@ -8,27 +8,29 @@ sidebar_position: 2
 
 1. Clone [Asylum UI](https://gitlab.com/asylum-space/asylum-ui) repository.
 2. Create `.env.local` within `asylum-ui/packages/connection-library` with the following content:
-```
-SEEDER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
-ASYLUM_NODE_URL = ws://127.0.0.1:9944
-IPFS_NODE_URL = http://127.0.0.1:5001
-```
+    ```yaml title="asylum-ui/packages/connection-library/.env.local"
+    SEEDER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
+    ASYLUM_NODE_URL = ws://127.0.0.1:9944
+    IPFS_NODE_URL = http://127.0.0.1:5001
+    ```
+   
 3. Create `.env.local` within `asylum-ui/packages/creator-studio` with the following content:
-```
-REACT_APP_MINTER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
-```
-:::info
-You can specify any mnemonic seed phrase, but it have to coincide in `connection-library` and `creator-studio` packages
-:::
+
+    ```yaml title="asylum-ui/packages/creator-studio/.env.local"
+    REACT_APP_MINTER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
+    ```
+    :::info
+    You can specify any mnemonic seed phrase, but it have to coincide in `connection-library` and `creator-studio` packages
+    :::
 4. Install [Docker](https://docs.docker.com/get-docker/) and `docker-compose` and run.
 5. Execute `yarn docker:up` in a root folder.
 6. Import account to PolkadotJS extension from seed phrase:
 
-```
-eternal danger cherry radar exit damage slam hip say relief awesome middle
-```
+    ```
+    eternal danger cherry radar exit damage slam hip say relief awesome middle
+    ```
 
-It will set up and run three containers and **automatically seed the mock data**.
+These steps will set up and run three containers and **automatically seed the mock data**.
 
 :::caution
 You might receive CORS policy error in Creator Studio, when you try to upload assets to IPFS.

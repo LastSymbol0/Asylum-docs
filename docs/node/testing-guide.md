@@ -19,93 +19,93 @@ To create new tags, you need to upload tag's metadata to IPFS and call `create_i
 
 1. Upload to IPFS `default-view` tag metadata and get its CID:
 
-```json
-{
-  "id": "default-view",
-  "description": "The default visualization for the item. MUST be present in all NFTs.",
-  "metadataExtensions": {}
-}
-```
+    ```json
+    {
+      "id": "default-view",
+      "description": "The default visualization for the item. MUST be present in all NFTs.",
+      "metadataExtensions": {}
+    }
+    ```
 
 2. Create a `default-view` tag:
 
-```json
-{
-  "tag": "default-view",
-  "metadata": "{METADATA_CID}"
-}
-```
+    ```json
+    {
+      "tag": "default-view",
+      "metadata": "{METADATA_CID}"
+    }
+    ```
 
 3. Upload to IPFS `jpeg` tag metadata and get its CID:
 
-```json
-{
-  "id": "jpeg",
-  "description": "in .jpeg format",
-  "metadataExtensions": {
-      "fileds": [
-        {
-          "name": "format",
-          "type": "string",
-          "default": ".jpeg",
-          "description": "The format of source is JPEG"
-        }
-      ]
-  }
-}
-```
+    ```json
+    {
+      "id": "jpeg",
+      "description": "in .jpeg format",
+      "metadataExtensions": {
+          "fileds": [
+            {
+              "name": "format",
+              "type": "string",
+              "default": ".jpeg",
+              "description": "The format of source is JPEG"
+            }
+          ]
+      }
+    }
+    ```
 
 4. Create a `jpeg` tag:
 
-```json
-{
-  "tag": "jpeg",
-  "metadata": "{METADATA_CID}"
-}
-```
+    ```json
+    {
+      "tag": "jpeg",
+      "metadata": "{METADATA_CID}"
+    }
+    ```
 
-### Blueprint
+### Blueprints
 
 Now we can create a blueprint with interpretations that support tags created in the previous step. To do this, we need to call `create_blueprint`.
 
 1. Upload blueprint metadata to IPFS and get its CID:
 
-```json
-{
-  "description": "The best weapon for the Helloween party 2022",
-}
-```
+    ```json
+    {
+      "description": "The best weapon for the Helloween party 2022",
+    }
+    ```
 
 2. Upload interpretation metadata to IPFS and get its CID:
 
-```json
-{
-  "description": "Default view interpretation in JPG format",
-  "format": ".jpg"
-}
-```
+    ```json
+    {
+      "description": "Default view interpretation in JPG format",
+      "format": ".jpg"
+    }
+    ```
 
 3. Upload interpretation source to IPFS and get its CID.
 
 4. Call `create_blueprint` extrinsic with the following arguments:
 
-```json
- {
-      "blueprint-name": "Old sword",
-      "metadata": "{TEMPLATE_METADATA_CID}",
-      "max": 100,
-      "interpretations": [
-         {
-            "tags": ["default-view", "jpeg"],
-            "interpretation": {
-               "id": "default-view-jpg",
-               "src": "{INTERPRETATION_SOURCE_CID}",
-               "metadata": "{INTERPRETATION_METADATA_CID}",
-            },
-         },
-      ],
-   }
-```
+    ```json
+     {
+          "blueprint-name": "Old sword",
+          "metadata": "{TEMPLATE_METADATA_CID}",
+          "max": 100,
+          "interpretations": [
+             {
+                "tags": ["default-view", "jpeg"],
+                "interpretation": {
+                   "id": "default-view-jpg",
+                   "src": "{INTERPRETATION_SOURCE_CID}",
+                   "metadata": "{INTERPRETATION_METADATA_CID}",
+                },
+             },
+          ],
+       }
+    ```
 
 ### Items
 
@@ -119,7 +119,7 @@ After having a blueprint, the owner can mint items from it. Call `mint_item_from
 }
 ```
 
-### space
+### Spaces
 
 To create a space, we need to call extrinsic `create_space` with arguments:
 

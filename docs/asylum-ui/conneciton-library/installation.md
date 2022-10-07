@@ -15,14 +15,14 @@ Almost all functionality of the Connection Library is covered in the [seed scrip
 1. Install and run [Asylum node](../../node/installation)
 2. Add [Connection Library](https://gitlab.com/asylum-space/asylum-ui/-/tree/main/packages/connection-library) as a local dependency your project `package.json`.
 
-```json title="package.json"
-{
-  dependencies: {
-    "@asylum-ui/connection-library": "^0.1.0",
-     ...
-  }
-}
-```
+    ```json title="package.json"
+    {
+      dependencies: {
+        "@asylum-ui/connection-library": "^0.1.0",
+         ...
+      }
+    }
+    ```
 
 ## Prepare account
 

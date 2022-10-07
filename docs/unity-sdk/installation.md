@@ -17,9 +17,10 @@ Example project includes all necessary plugins assets.
 
 1. [Download](https://unity3d.com/get-unity/download/archive) Unity **version 2021.3.1f1** and [Unity Hub](https://unity3d.com/get-unity/download). After running Unity Hub, locate just installed Unity **version 2021.3.1f1**.
 2.  Clone this repository with [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-```
-git clone --recurse-submodules https://gitlab.com/asylum-space/asylum-unity-sdk-example
-```
+
+    ```
+    git clone --recurse-submodules https://gitlab.com/asylum-space/asylum-unity-sdk-example
+    ```
 3. Open `asylum-unity-sdk-example` project in Unity
 4. You can test plugin in the [Play Mode](./build-and-run/play-mode)
 

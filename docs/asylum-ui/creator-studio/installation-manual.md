@@ -18,71 +18,58 @@ You have set up and run three processes in the background:
 
 ## Installation steps
 
-1. Build and run [Asylum node](../../node/installation):
+1. Build and run [Asylum node](../../node/installation): `node-asylum --dev`
 
-```
-node-asylum --dev
-```
 
-2. [Install](https://docs.ipfs.io/install/command-line/#official-distributions) and run the local IPFS node :
+2. [Install](https://docs.ipfs.io/install/command-line/#official-distributions) and run the local IPFS node : `ipfs daemon`
 
-```
-ipfs daemon
-```
-
-:::caution
-You might receive CORS policy error in Creator Studio, when you try to upload assets to IPFS.
-To avoid this issue, execute the following command and restart `ipfs daemon`:
-
-```
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
-```
-:::
+    :::caution
+    You might receive CORS policy error in Creator Studio, when you try to upload assets to IPFS.
+    To avoid this issue, execute the following command and restart `ipfs daemon`:
+    
+    ```
+    ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
+    ```
+    :::
 
 3. Clone [Asylum UI](https://gitlab.com/asylum-space/asylum-ui) repository and create `.env.local` within `asylum-ui/packages/creator-studio` with the following content:
-```
-REACT_APP_MINTER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
-```
+    ```yaml title="asylum-ui/packages/creator-studio/.env.local"
+    REACT_APP_MINTER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
+    ```
 
-4. Install dependencies:
-```
-yarn
-```
+4. Install dependencies: `yarn`
 
-5. Start Creator Studio locally:
+5. Start Creator Studio locally: `yarn start`
 
-```
-yarn start
-```
 
 ## Seed storage
 
 We created 3 seed scripts in `connection-library` for development, tutorials and tests.
 
 
-1. Navigate `./packages/connection-libary` and create `.env.local` file with the following content:
+1. Navigate to `asylum-ui/packages/connection-libary` and create `.env.local` file with the following content:
 
-```
-SEEDER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
-ASYLUM_NODE_URL = ws://127.0.0.1:9944
-IPFS_NODE_URL = http://127.0.0.1:5001
-```
+    ```yaml title="asylum-ui/packages/connection-libary/.env.local"
+    SEEDER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
+    ASYLUM_NODE_URL = ws://127.0.0.1:9944
+    IPFS_NODE_URL = http://127.0.0.1:5001
+    ```
 
-2. Run `yarn seed` or `yarn seed:demo` or `yarn seed:test`
+2. Run `yarn seed` or `yarn seed:demo`
 
 3. Import account to PolkadotJS extension from seed phrase:
 
-```
-eternal danger cherry radar exit damage slam hip say relief awesome middle
-```
+    ```
+    eternal danger cherry radar exit damage slam hip say relief awesome middle
+    ```
 
-:::tip
-Seeded data will be lost after each restart of `node-asylum`. To keep your data after a restart, you can use `--base-path` option.
-
-```
-./node-asylum --dev --base-path /tmp/node-asylum
-```
-:::
+    :::tip
+    Seeded data will be lost after each restart of `node-asylum`. To keep your data after a restart, you can use `--base-path` option.
+    
+    ```
+    ./node-asylum --dev --base-path /tmp/node-asylum
+    ```
+    :::
 
 
 

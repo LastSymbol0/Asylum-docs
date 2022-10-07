@@ -17,44 +17,44 @@ It is also possible to query Items of a certain user with the help of a secret p
 
 2. Then you will need to create empty `GameObject` in the scene and then add to it the AsylumPlugin script component.
 
-![](img/EditorPlugin_CreateObj.png)
+  ![](img/EditorPlugin_CreateObj.png)
 
-![](img/EditorPlugin_SetComponent.png)
+  ![](img/EditorPlugin_SetComponent.png)
 
-:::info
-If you have downloaded our [example](https://gitlab.com/asylum-space/asylum-unity-sdk-example), then you can find this `GameObject` named "EditorPlugin" in the scene hierarchy.
-:::
+  :::info
+  If you have downloaded our [example](https://gitlab.com/asylum-space/asylum-unity-sdk-example), then you can find this `GameObject` named "EditorPlugin" in the scene hierarchy.
+  :::
 
 3. Make sure you enter the user's passphrase in the [AsylumPlugin](https://gitlab.com/asylum-space/asylum-unity-sdk/-/tree/main/AsylumSDK/AsylumPlugin.cs) component field.
 
-![](img/EditorPlugin_SetPhrase.png)
+  ![](img/EditorPlugin_SetPhrase.png)
 
 4. After that, press the button to set the secret phrase. Then you should see the logs about the correct connection and generation of the correct **PulicKey**.
 
-![](img/EditorPlugin_ClickButtonSet.png)
+  ![](img/EditorPlugin_ClickButtonSet.png)
 
-![](img/EditorPlugin_ConnectLogs.png)
+  ![](img/EditorPlugin_ConnectLogs.png)
 
 5. You will have three new buttons with which you can request information and display it.
 
-![](img/EditorPlugin_AllButtons.png)
+  ![](img/EditorPlugin_AllButtons.png)
 
 - This is what a **Tags** request looks like.
 
-    ![](img/EditorPlugin_TagButton.png)
+  ![](img/EditorPlugin_TagButton.png)
 - This is what a **Blueprints** request looks like.
 
-    ![](img/EditorPlugin_BlueprintButton.png)
+  ![](img/EditorPlugin_BlueprintButton.png)
 
 - This is what a **User Items** request looks like.
 
-    ![](img/EditorPlugin_ItemButton.png)
+  ![](img/EditorPlugin_ItemButton.png)
 
 6. Also in the **Blueprint** tab you can mint an item by clicking on the **Mint Item button**.
 
-![](img/EditorPlugin_MintItem.png)
+  ![](img/EditorPlugin_MintItem.png)
 
 - And then you can find new item in **User Items** tab
-    
-    ![](img/EditorPlugin_ItemIsMinted.png)
+
+  ![](img/EditorPlugin_ItemIsMinted.png)
 
