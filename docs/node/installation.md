@@ -7,7 +7,7 @@ sidebar_position: 1
 ### Rust Setup
 
 First, complete the [basic Rust setup instructions](https://www.rust-lang.org/tools/install).
-If you are a Windows user the this [link](https://docs.substrate.io/v3/getting-started/windows-users/) is for you. But native development of substrate is not very well supported.
+If you are a Windows user the this [link](https://docs.substrate.io/install/windows/) is for you. But native development of substrate is not very well supported.
 
 ### Run
 
