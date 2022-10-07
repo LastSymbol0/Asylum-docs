@@ -21,7 +21,7 @@
 3. Follow the steps of [Docker setup](../../asylum-ui/creator-studio/installation-docker) and run the following command in terminal:
 
     ```
-    docker compose up
+    docker-compose up
     ```
 
     :::info 
