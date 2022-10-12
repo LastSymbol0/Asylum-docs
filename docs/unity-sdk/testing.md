@@ -15,6 +15,12 @@ sidebar_position: 6
     yarn docker:restart:node
     yarn docker:seed:with-items
     ```
+   
+    or use `yarn docker:test:up` instead `yarn docker:up`:
+
+    ```
+    yarn docker:test:up
+    ```
     :::
 
 3. Open two windows: **Window/General/Test Runner** and **Window/Analysis/Code**
