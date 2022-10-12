@@ -12,6 +12,12 @@ sidebar_position: 3
     REACT_APP_NODE_ENV = test
     REACT_APP_MINTER_MNEMONIC = eternal danger cherry radar exit damage slam hip say relief awesome middle
     ```
+   :::info
+   `REACT_APP_NODE_ENV = test` will spin up the web app in `test` mode. The step with connecting to Polkadot{.js} extension
+   will be skipped, as it's not possible to install and properly test this extension within Cypress test environment. 
+
+   The seed phrase `REACT_APP_MINTER_MNEMONIC` will be automatically set to `connection-library`, when user clicks `connect wallet`.
+   :::
 3. Navigate to root `asylum-ui` folder
 4. `yarn docker:test:up`
 

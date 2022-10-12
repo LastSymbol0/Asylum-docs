@@ -8,6 +8,15 @@ sidebar_position: 6
 
 1. Follow [Quick install](./installation) to setup Asylum Unity SDK example
 2. Follow [Docker setup](../asylum-ui/creator-studio/installation-docker) to install and run Creator Studio in Docker
+
+    :::caution
+    Tests are expecting specific items minted on the chain. Please run the following commands in `asylum-ui` root folder to reseed data with items:
+    ```
+    yarn docker:restart:node
+    yarn docker:seed:with-items
+    ```
+    :::
+
 3. Open two windows: **Window/General/Test Runner** and **Window/Analysis/Code**
 4. In the **Code Coverage** window click **Enable Code Coverage**
 5. In Test Runner windows select **Play Mode** and click **Run All**

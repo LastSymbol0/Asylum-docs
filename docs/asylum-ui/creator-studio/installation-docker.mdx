@@ -27,6 +27,10 @@ import TabItem from '@theme/TabItem';
     :::
 4. Install [Docker](https://docs.docker.com/get-docker/) and `docker-compose` and run.
 5. Execute `yarn docker:up` in a root folder.
+  :::caution
+  Make sure that port `3000` on `localhost` if free; otherwise web app won't start properly.
+  You can restart asylum-ui container when the port is freed
+  :::
 6. Import account to PolkadotJS extension from seed phrase:
 
     ```
